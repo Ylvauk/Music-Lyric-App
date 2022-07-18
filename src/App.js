@@ -4,29 +4,33 @@ import "./App.css";
 import Home from "./Components/Home";
 import LyricsPage from "./Components/LyricsPage";
 import SearchBar from "./Components/SearchBar";
-import SearchResults from "./Components/SearchResults";
+import Loading from "./Components/Loading";
 
 export const AppContext = createContext()
 function App() {
   
   const [searchString, setSearchString] = useState("");
   const [searchResults, setSearchResults] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   function getLyrics(searchString) {
     
     const url = `https://api.lyrics.ovh/v1/${searchString}`;
+    setIsLoading(true)
     fetch(url)
       .then((resp) => resp.json())
       .then((data) => {
-        setSearchResults(data);
+        setSearchResults(data.lyrics);
+        setIsLoading(false)
       })
       .catch((error) => {
+        setIsLoading(false)
         console.log(error);
       });
-  }
-
+    }
+    
+    console.log(searchResults)
   function handleChange(event) {
-    console.log("test");
     setSearchString(event.target.value);
   }
 
@@ -36,14 +40,10 @@ function App() {
     getLyrics(searchString);
     navigate('/results/')
   }
-
-<Home
-  handleChange={handleChange}
-  handleSubmit={handleSubmit}
-  searchString={searchString}
-/>
+  
   return (
     <div className="App">
+      {isLoading ? <Loading/> : <div></div>}
       <nav>
         <Link to="/">
           <h2>Home</h2>

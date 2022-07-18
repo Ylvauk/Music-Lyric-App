@@ -1,11 +1,11 @@
 import React from 'react';
-import SearchResults from './SearchResults';
 
 const LyricsPage = ({searchResults}) => {
     return (
         <div>
             <p>Placeholder</p>
-            <p>{searchResults}</p>
+            {/* {searchResults.map(searchResult=><div>{searchResult}</div>)} */}
+            {searchResults}
         </div>
     );
 };
