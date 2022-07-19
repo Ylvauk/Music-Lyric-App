@@ -40,10 +40,9 @@ function App() {
     getLyrics(searchString);
     navigate('/results/')
   }
-  
   return (
     <div className="App">
-      {isLoading ? <Loading/> : <div></div>}
+      {isLoading ? <Loading/> : null}
       <nav>
         <Link to="/">
           <h2>Home</h2>
@@ -58,11 +57,13 @@ function App() {
   handleChange={handleChange}
   handleSubmit={handleSubmit}
   searchString={searchString}
+  isLoading={isLoading}
 />} />
+<Route path="/loading/" element={<Loading/>}/>
         </Routes>
       </main>
     </div>
-  );
+  )
 }
 
 export default App;

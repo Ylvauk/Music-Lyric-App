@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { AppContext } from "../App";
 
-const Home = ({handleSubmit,searchString,handleChange}) => {
+const Home = ({ handleSubmit, searchString, handleChange}) => {
   return (
     <div>
       <form onSubmit={handleSubmit} className="form-horizontal">
@@ -18,7 +18,7 @@ const Home = ({handleSubmit,searchString,handleChange}) => {
       <h1>Music Finder</h1>
       <p>Enter A song title at the top to get started</p>
     </div>
-  );
+  )
 };
 
 export default Home;
