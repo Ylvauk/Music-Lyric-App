@@ -1,22 +1,18 @@
-import React, { useContext } from "react";
-import { AppContext } from "../App";
+import React from "react";
+import "./Home.css"
+import SearchBar from "./SearchBar";
 
 const Home = ({ handleSubmit, searchString, handleChange}) => {
   return (
-    <div>
-      <form onSubmit={handleSubmit} className="form-horizontal">
-        <input
-          placeholder="Search A Song"
-          type="text"
-          name="searchString"
-          required
-          onChange={handleChange}
-          value={searchString}
-        />
-        <button type="submit">Search</button>
-      </form>
-      <h1>Music Finder</h1>
+    <div className="home">
+      <div className="home-container">
+      <SearchBar
+      handleChange={handleChange}
+      handleSubmit={handleSubmit}
+      searchString={searchString}
+      />
       <p>Enter A song title at the top to get started</p>
+      </div>
     </div>
   )
 };

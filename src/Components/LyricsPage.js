@@ -1,12 +1,11 @@
 import React from 'react';
-
-const LyricsPage = ({searchResults,isLoading}) => {
+import './LyricsPage.css'
+const LyricsPage = ({searchResults, searchString}) => {
 
     return (
-        <div>
-            <p>Placeholder</p>
-            {/* {searchResults.map(searchResult=><div>{searchResult}</div>)} */}
-            {searchResults}
+        <div className='lyrics-page'>
+            <h1>{searchString}</h1>
+            <p>{searchResults}</p>
         </div>
     )
 };
