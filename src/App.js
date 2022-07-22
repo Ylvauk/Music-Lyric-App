@@ -4,7 +4,6 @@ import "./App.css";
 import Home from "./Components/Home";
 import LyricsPage from "./Components/LyricsPage";
 import Loading from "./Components/Loading";
-import About from "./Components/About";
 
 function App() {
   const [searchString, setSearchString] = useState("");
@@ -42,9 +41,6 @@ function App() {
         <Link className="nav-child" to="/">
           <h2>Home</h2>
         </Link>
-        <Link className="nav-child" to="/about/">
-          <h2>About</h2>
-        </Link>
       </nav>
       <main>
         <Routes>
@@ -64,7 +60,6 @@ function App() {
             }
           />
           <Route path="/loading/" element={<Loading />} />
-          <Route path="/about/" element={<About />} />
         </Routes>
       </main>
     </div>

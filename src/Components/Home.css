@@ -9,12 +9,9 @@
 .home-container{
     grid-row:2;
 }
-form{
-    height:6vh;
-}
 button{    
-    background-color: lightskyblue;
-    color: white;
+    background-color: lavender;
+    color: black;
     font-size: 25px;
     border-radius: 20px 20px 20px 20px;
     padding: 9px;
@@ -25,5 +22,5 @@ input{
     font-size:25px;
     border-radius: 15px 15px 15px 15px;
     height: 40px ;
-    width: 20vw;
+    width:300px;
 }

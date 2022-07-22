@@ -12,8 +12,9 @@
   align-items: center;
   background: lavender;
 }
+
 .nav-child-title{
-  margin-right: 75vw;
+  margin-right:77vw;
   background-color: lavender;
   font-size: 25px;
   padding-bottom: 0 auto;
@@ -29,4 +30,19 @@ a:link{
 }
 a.nav-child:hover, h2:hover{
   background-color: rgb(197, 197, 248);
+}
+@media screen and (max-width: 600px){
+  .nav-child-title{
+    margin-right:25vw;
+  }
+}
+@media screen and (min-width: 600px){
+  .nav-child-title{
+    margin-right:50vw;
+  }
+}
+@media screen and (min-width: 1200px){
+  .nav-child-title{
+    margin-right:77vw;
+  }
 }
