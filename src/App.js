@@ -17,12 +17,9 @@ function App() {
         setSearchResults(data.lyrics);
         navigate("/results/");
       })
-      .catch((error) => {
-        console.log(error);
-      });
+      .catch((error) => {});
   }
 
-  console.log(searchResults);
   function handleChange(event) {
     setSearchString(event.target.value);
   }
@@ -46,8 +43,12 @@ function App() {
         <Routes>
           <Route
             path="/results/"
-            element={<LyricsPage searchResults={searchResults}
-            searchString={searchString} />}
+            element={
+              <LyricsPage
+                searchResults={searchResults}
+                searchString={searchString}
+              />
+            }
           />
           <Route
             path="/"

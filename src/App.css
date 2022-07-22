@@ -1,11 +1,11 @@
 .App {
   text-align: center;
 }
-.nav-child{
+.nav-child {
   margin-right: 3vw;
   background: lavender;
 }
-.nav-1{
+.nav-1 {
   width: 100vw;
   display: flex;
   justify-content: flex-end;
@@ -13,36 +13,37 @@
   background: lavender;
 }
 
-.nav-child-title{
-  margin-right:77vw;
+.nav-child-title {
+  margin-right: 77vw;
   background-color: lavender;
   font-size: 25px;
   padding-bottom: 0 auto;
   padding-top: 0 auto;
 }
-h2{
-  text-decoration:none;
+h2 {
+  text-decoration: none;
   background-color: lavender;
-  color:black;
+  color: black;
 }
-a:link{
+a:link {
   text-decoration: none;
 }
-a.nav-child:hover, h2:hover{
+a.nav-child:hover,
+h2:hover {
   background-color: rgb(197, 197, 248);
 }
-@media screen and (max-width: 600px){
-  .nav-child-title{
-    margin-right:25vw;
+@media screen and (max-width: 600px) {
+  .nav-child-title {
+    margin-right: 25vw;
   }
 }
-@media screen and (min-width: 600px){
-  .nav-child-title{
-    margin-right:50vw;
+@media screen and (min-width: 600px) {
+  .nav-child-title {
+    margin-right: 50vw;
   }
 }
-@media screen and (min-width: 1200px){
-  .nav-child-title{
-    margin-right:77vw;
+@media screen and (min-width: 1200px) {
+  .nav-child-title {
+    margin-right: 77vw;
   }
 }

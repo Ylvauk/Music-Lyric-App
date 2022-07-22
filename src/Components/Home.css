@@ -1,26 +1,24 @@
-*{
-    background-color:rgb(255, 255, 255);
-    
+* {
+  background-color: rgb(255, 255, 255);
 }
-.home{
-    display: grid;
-    grid-template-rows:20vh 33vh 33vh; 
+.home {
+  display: grid;
+  grid-template-rows: 20vh 33vh 33vh;
 }
-.home-container{
-    grid-row:2;
+.home-container {
+  grid-row: 2;
 }
-button{    
-    background-color: lavender;
-    color: black;
-    font-size: 25px;
-    border-radius: 20px 20px 20px 20px;
-    padding: 9px;
-    margin-left: 10px;
-
+button {
+  background-color: lavender;
+  color: black;
+  font-size: 25px;
+  border-radius: 20px 20px 20px 20px;
+  padding: 9px;
+  margin-left: 10px;
 }
-input{
-    font-size:25px;
-    border-radius: 15px 15px 15px 15px;
-    height: 40px ;
-    width:300px;
+input {
+  font-size: 25px;
+  border-radius: 15px 15px 15px 15px;
+  height: 40px;
+  width: 300px;
 }
