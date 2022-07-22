@@ -5,7 +5,8 @@ Introduction
 Welcome to my lyrics site where you can search for a song by name to find the lyrics.
 
 Full Contents
-The site contains a home page with an introduction and search bar, a page of search results, and a page containing the lyrics requested.
+The site contains a home page with a searchbar and a page containing the lyrics requested. I chose this as my topic because I like music and wanted to  get a site started that I could continue to expand overtime and add features.
+<img src="./Site.png" alt="Alt text"/>
 
 To check out my site check this link
 
